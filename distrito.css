@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    background-color: #edefff;
+    color: rgb(0, 0, 0);
+
+  .distrito{
+    margin-top: 10%;
+  }
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Share Tech', sans-serif;
+    min-width: 1200px;
+    position: relative;
+  }
+  .logo{
+    font-weight: 600;
+    font-size: 3.8rem;
+  }
+  nav{
+    background-color: #0000004b;
+    color: #ffffff;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Asegurar que el nav esté superpuesto */
+    width: 100%; /* Ocupa todo el ancho */
+    top: 0; /* Colocarlo en la parte superior de la página */
+    z-index: 10; /* Asegurarse de que esté sobre el fondo */
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  ul li:hover{
+    background-color: #ff4321;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+
+  /* División Administrativa Table Styling */
+.division-section {
+  padding: 2em 0;
+}
+
+.division-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 1em;
+  font-size: 1rem;
+}
+
+.division-table thead {
+  background-color: #ff4321;
+  color: #ffffff;
+}
+
+.division-table th, .division-table td {
+  padding: 0.75em 1em;
+  border: 1px solid #ddd;
+}
+
+.division-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.division-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+/* Demografía Table Styling */
+.demografia-section {
+  padding: 2em 0;
+}
+
+.demografia-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 1em;
+  font-size: 1rem;
+}
+
+.demografia-table thead {
+  background-color: #ff4321;
+  color: #ffffff;
+}
+
+.demografia-table th, .demografia-table td {
+  padding: 0.75em 1em;
+  border: 1px solid #ddd;
+}
+
+.demografia-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.demografia-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+.title{
+  text-align: center;
+}
+
+.mapa{
+  margin: 30px;
+}
+

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepción web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="leadmark.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+</head>
+<body>
+    
+    <div class="container2">
+        <nav>
+            <span class="logo"><a href="index.html">Concepción</a></span>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="historia.html">HISTORIA</a></li>
+                <li><a href="distrito.html">DISTRITO Y DEMOGRAFIA</a></li>
+                <li><a href="atractivo-turisticos.html">ATRACTIVO TURISTICO</a></li>
+            </ul>
+        
+        </nav>
+        <div class="background"></div>
+        <section><!-- Botón para abrir/cerrar el menú -->
+            <button id="toggleMenu" class="boton-toggle">🎶</button>
+        
+            <!-- Menú de música en el lado derecho -->
+            <div id="menuMusica" class="menu-musica">
+                <h2>Música</h2>
+                <ul class="canciones">
+                    <li onclick="playSong('/Músicas/A4 Musica - Concepcion Florido.mp3')">Canción 1</li>
+                    <li onclick="playSong('/Músicas/Bella Concepción - Trovabohemia.mp3')">Canción 2</li>
+                    <li onclick="playSong('/Músicas/Concepción del Paraguay - La Perla del Norte.mp3')">Canción 3</li>
+                    <li onclick="playSong('/Músicas/Concepcion jerere (Musica Paraguaya).mp3')">Canción 4</li>
+                    <li onclick="playSong('/Músicas/Concepción, salud! - Oscar Gómez.mp3')">Canción 5</li>
+                </ul>
+                
+                <!-- Controles de reproducción -->
+                <div class="controles">
+                    <button class="boton-control" onclick="playAudio()">▶️ Play</button>
+                    <button class="boton-control" onclick="pauseAudio()">⏸️ Pause</button>
+                    <button class="boton-control" onclick="stopAudio()">⏹️ Stop</button>
+                </div>
+        
+                <!-- Elemento de audio oculto -->
+                <audio id="audioPlayer" src=""></audio>
+            </div>
+        
+            <script src="musica.js"></script>
+    <!-- JavaScript para abrir/cerrar el menú -->
+    <script src="musica.js"></script></section>
+        <header>
+            
+            <h1>CONCEPCIÓN</h1>
+            <h2>Departamento del Paraguay</h2>
+            <p>Es uno de los 17 departamentos que conforman la Republica del Paraguay.<br>Fue fundada en 1773 por Agustín Fernando de Pinedo en el siglo XVIII<br> con el nombre de Villa Real de la Concepción</constantemente></p>
+            <a href="historia.html">
+            <button type="button">
+                Más Información
+                <img src="https://cdn-icons-png.flaticon.com/128/545/545682.png" class="flecha">
+            </button>
+        </a>
+        </header>
+    </div>
+    <div class="centro-de-Concepción">
+            <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">Un poco sobre Concepción</h6>
+                    <h6 class="section-subtitle mb-4">El primer departamento del Paraguay</h6>
+                    <p >Ubicada en el norte de Paraguay, es la capital del departamento del mismo nombre y uno de los centros históricos más importantes del país. La ciudad ha desempeñado un papel clave en el desarrollo económico y comercial de la región.</p>
+                    <img src="assets/imgs/about.jfif" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm" height="265px">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/imgs/about-2.jfif" alt="" class="w-100 shadow-sm" height="265px">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>Con su rica historia, paisajes naturales impresionantes y vibrante cultura, Concepción se destaca por su actividad ganadera y agrícola, así como por sus festividades tradicionales.</p>
+                            <p><b>La patrona de la ciudad de Concepción es la Virgen de la Inmaculada Concepción </b><br>
+                            </p>
+                            <p> Su fiesta patronal se celebra cada 8 de diciembre, y es una de las festividades religiosas más importantes de la ciudad, con procesiones, misas, y celebraciones populares en su honor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->    
+    </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">Portafolio de Imagenes</h6>
+            <h6 class="section-subtitle mb-5 text-center">Sobre el departamento de Concepción</h6>
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    Inicio
+                </a>
+                <a href="#" data-filter=".advertising">
+                    Historia
+                </a>
+                <a href="#" data-filter=".branding">
+                    Distritos
+                </a>
+                <a href="#" data-filter=".web">
+                    Distritos
+                </a>
+            </div>
+            <div class="portfolio-container"> 
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Lorec.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Loreto</h6>
+                                <p class="subtitle">Distrito N° 6</p>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
+                
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Barito.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Paso Barreto</h6>
+                                <p class="subtitle">Distrito N° 7</p>
+                            </div>
+                        </div> 
+                    </div>                         
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Cap.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Catedral de la Virgen Inmaculada Concepción</h6>
+                                <p class="subtitle"></p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Fredo.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">San Alfredo</h6>
+                                <p class="subtitle">Distrito N° 7</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/José.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Sargento José Félix López</h6>
+                                <p class="subtitle">Distrito N° 11</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Carlos.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">San Carlos del Apa</h6>
+                                <p class="subtitle">Distrito N° 9</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+                <div class="col-md-6 col-lg-4 web"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Lazaro.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">San Lázaro</h6>
+                                <p class="subtitle">Distrito N° 10</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                    <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Concepto.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Puerto de Concepción</h6>
+                                <p class="subtitle"></p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Lugar.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/Lugar.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Museo del cuartel de la Villa Real</h6>
+                                <p class="subtitle"></p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>  
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-1.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-1.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Concepción</h6>
+                                <p class="subtitle">Capital del departamento y Distrito N° 4</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>  
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/belén.jfif" class="img-fluid" alt="belén">  
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/belén.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Belén
+                                </h6>
+                                <p class="subtitle">Distrito N° 3</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Horqueta.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/Horqueta.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Horqueta</h6>
+                                <p class="subtitle">Distrito N° 5</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/arroyito.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/arroyito.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Arroyito</h6>
+                                <p class="subtitle">Distrito N° 1</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Azote.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/Azote.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Azotey</h6>
+                                <p class="subtitle">Distrito N° 2</p>
+                            </div>
+                        </div>
+                    </div>                                                      
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/Yby.jfif" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates" height="400px" width="400px"   >          
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/Yby.jfif"></a>
+                            <div class="text-holder">
+                                <h6 class="title">Yby Yaú</h6>
+                                <p class="subtitle">Distrito N° 12</p>
+                            </div>
+                        </div>
+                    </div>                                                   
+                </div>
+            </div>   
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+ <footer>
+
+        <div class="footer-bg">
+            <h2 class="footer-title">¿Qué opinas de la página?</h2>
+
+            <form action="https://formspree.io/f/mvgozvyj"
+            method="POST">
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Nombre" name="Nombre" required>
+                    <input class="campo" type="number" placeholder="Telefono" name="Telefono">
+                </div>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Dirección" name="Dirección">
+                    <input class="campo" type="email" placeholder="Correo" name="Correo" required>
+                </div>
+                <textarea class="campo" cols="30" rows="10" placeholder="Texto" name="Texto"></textarea>
+                <input type="submit" value="Enviar" class="btn-1">
+            </form>
+        </div>
+        <div class="footer-txt">
+            <p>
+                CREADO POR 2° ICA
+            </p>
+        </div>
+    </footer>
+    <!-- core  -->
+        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    
+    
+        <!-- Isotope -->
+        <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+        <!-- LeadMark js -->
+        <script src="assets/js/leadmark.js"></script>
+</body>
+</html>
